@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract SimpleToken is ERC20 {
 
-    uint256 public initialSupply = 1000* 10**8;
+    uint256 public initialSupply = 1000000*10**8;
     
     constructor() ERC20("Simple Token", "SPN") {
         _mint(msg.sender, initialSupply);
